@@ -1,17 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-media',
-  templateUrl: './media.component.html',
-  styleUrls: ['./media.component.scss']
+  selector: 'app-view-media',
+  templateUrl: './view-media.component.html',
+  styleUrls: ['./view-media.component.scss']
 })
-export class MediaComponent implements OnInit {
-
-  @Input() titre: string;
-  @Input() type: string;
-  @Input() genre: string;
-  @Input() resume: string;
-  @Input() image: string;
+export class ViewMediaComponent implements OnInit {
 
   medias = [
     {
@@ -36,15 +30,10 @@ export class MediaComponent implements OnInit {
       image: 'Kung Fury.png'
     },
   ]
-
   
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  test(): void{
-    alert("test")
   }
 
 }
