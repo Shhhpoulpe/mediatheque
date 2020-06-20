@@ -9,6 +9,7 @@ export class ViewMediaComponent implements OnInit {
 
   medias = [
     {
+      id: '0',
       titre: 'ça',
       type: 'livre',
       genre: 'horreur',
@@ -16,6 +17,7 @@ export class ViewMediaComponent implements OnInit {
       image: 'ca.png'
     },
     {
+      id: '1',
       titre: 'La tour monparnasse infernal',
       type: 'film',
       genre: 'comedie',
@@ -23,6 +25,7 @@ export class ViewMediaComponent implements OnInit {
       image: 'monparnasse.png'
     },
     {
+      id: '2',
       titre: 'Kung Fury',
       type: 'film',
       genre: 'action/comedie',
@@ -30,7 +33,7 @@ export class ViewMediaComponent implements OnInit {
       image: 'Kung Fury.png'
     },
   ]
-  
+
   constructor() { }
 
   ngOnInit(): void {
