@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: ViewMediaComponent, },
-  { path: 'media', component: ViewMediaSingleComponent, data: {id: '2'}}
+  { path: 'media/:id', component: ViewMediaSingleComponent}
 ];
 
 @NgModule({

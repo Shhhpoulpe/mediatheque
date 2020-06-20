@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MediaComponent implements OnInit {
 
-  @Input() id: string;
+  @Input() id: Int8Array;
   @Input() titre: string;
   @Input() type: string;
   @Input() genre: string;

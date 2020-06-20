@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,17 +6,21 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './view-media-single.component.html',
   styleUrls: ['./view-media-single.component.scss']
 })
-export class ViewMediaSingleComponent implements OnInit {
+export class ViewMediaSingleComponent implements OnInit,OnDestroy {
 
-  @Input() id: string;
-  @Input() test: string;
+  id: number;
+  private sub: any;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.activatedRoute.data.subscribe(data => {
-      this.id=data.id;
+    this.sub = this.route.params.subscribe(params => {
+      this.id = +params['id'];
   })
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 
 }
