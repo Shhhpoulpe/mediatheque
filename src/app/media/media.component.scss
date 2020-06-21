@@ -12,7 +12,7 @@ p {
 }
 
 IMG.image {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     height: 25%;
@@ -22,6 +22,7 @@ IMG.image {
  }
 
 .cadre{
+    
     height: 50%;
     width: 20%;
     margin-bottom: 20px;
@@ -29,6 +30,23 @@ IMG.image {
     padding-bottom: 20px;
     align-items: center;
     margin: auto;
-    background-color: rgb(119, 119, 119);
-    margin-top: 10px;
+    background: #1abc9c;
+    
+}
+
+.genre
+{
+    font-weight: bold;
+    font-size: large;
+}
+
+.cadreALL
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+body
+{
+    background-color: #85e7d4;
 }

@@ -1,9 +1,11 @@
-<div class="app-media">
-    <app-media  *ngFor="let media of medias"
-        [id]="media.id"
-        [titre]="media.titre"
-        [type]="media.type"
-        [genre]="media.genre"
-        [resume]="media.resume"
-        [image]="media.image"></app-media>
-</div>
+<body>
+    <div class="app-media">
+        <app-media  *ngFor="let media of medias"
+            [id]="media.id"
+            [titre]="media.titre"
+            [type]="media.type"
+            [genre]="media.genre"
+            [resume]="media.resume"
+            [image]="media.image"></app-media>
+    </div>
+</body>

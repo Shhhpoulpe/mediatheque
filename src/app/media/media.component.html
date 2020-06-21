@@ -1,20 +1,24 @@
-<div class="cadre" routerLink="/media/{{id}}">
-    <div class="titre">
-        <h1>{{id}}</h1>
+<body>
+    <div class="cadreALL">
+        <div class="cadre" routerLink="/media/{{id}}">
+            <div class="titre">
+                <h1>[{{id}}]</h1>
+            </div>
+            <div class="titre">
+                <h1>{{titre}}</h1>
+            </div>
+            <div class="genre">
+                <p>{{type}}</p>
+            </div>
+            <div class="genre">
+                <p>{{genre}}</p>
+            </div>
+            <div class="resume">
+                <p>{{resume}}</p>
+            </div>
+            <div>
+                <img class="image" src='../../assets/images/{{image}}'>
+            </div>
+        </div>
     </div>
-    <div class="titre">
-        <h1>{{titre}}</h1>
-    </div>
-    <div class="genre">
-        <p>{{type}}</p>
-    </div>
-    <div class="genre">
-        <p>{{genre}}</p>
-    </div>
-    <div class="resume">
-        <p>{{resume}}</p>
-    </div>
-    <div>
-        <img class="image" src='../../assets/images/{{image}}'>
-    </div>
-</div>
+</body>
