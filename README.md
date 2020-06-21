@@ -23,7 +23,3 @@ Le media est un modèle unique media pour l'affichage
 Le view-media sert à afficher plusieurs médias
 
 Le view-media-single sert à afficher un seul média
-
-# Bugs connu
-
-Le bouton menu permet de revenir au menu principal mais il y a besoin de refresh la page après
